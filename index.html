@@ -1,54 +1,25 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WellLife360 - Kişisel Sağlık Analizi</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #f2f5f7;
-            margin: 0;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 28px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-        }
-        button {
-            background: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-        button:hover {
-            background: #45a049;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELLİFE360 – Kişisel Sağlık Analizi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>WellLife360 – Kişisel Sağlık Analizi</header>
+    <header>WELLİFE360 – Kişisel Sağlık Analizi</header>
 
     <div class="container">
-        <h2>Sağlık Testine Hoş Geldiniz</h2>
-        <p>Başlamak için butona tıklayın.</p>
 
-        <button onclick="alert('Test bölümü yakında eklenecek!')">
-            Teste Başla
-        </button>
+        <h2>Kişisel Sağlık ve Yaşam Tarzı Testi</h2>
+        <p>25 soruda ruhsal durumun, fiziksel sağlığın, spor ihtiyacın ve kişisel yaşam kaliten analiz edilecek.</p>
+
+        <div id="testArea"></div>
+
+        <button id="startBtn" onclick="startTest()">Teste Başla</button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
